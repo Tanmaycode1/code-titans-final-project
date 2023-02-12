@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* height: 80%; */
+}
+.contain {
+  border-radius: 0.5rem;
+  text-align: center;
+  border-width: 1px;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.title {
+  text-align: center;
+}
+.mini-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  column-gap: 15px;
+  min-width: 600px;
+  min-height: 300px;
+  justify-content: space-around;
+
+  /* margin-left: 25%; */
+}
+.button {
+  font-weight: bold;
+  /* text-align: center; */
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment@sender</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/sendmoney.css') }}">
+</head>
+<body>
+    <form>
+        <div id="header">
+            <img src="Finman copy.png" alt="logo" id="header-logo">
+            <div id="header-text">
+                <h1>Payment Gateway</h1>
+                <p>Easy and accessible payments at your fingertips..</p>
+            </div>
+        </div>
+        <div class="main">
+            <img src="https://www.netsolutions.com/insights/wp-content/uploads/2021/10/eCommerce-trends-to-watch-in-2022.webp" id="main-image">
+            <div class="form-container">
+                <div id="upi-id">
+                    <p>UPI ID: </p>
+                    <span class="material-symbols-outlined">
+                        badge
+                        </span>
+                    <input type="text" placeholder="Receiver's UPI ID">
+                </div>
+                <div id="receiver">
+                    <p>Receiver's Name: </p>
+                    <span class="material-symbols-outlined">
+                        drive_file_rename_outline
+                    </span>
+                    <input type="text" placeholder="Enter receiver's name">
+                </div>
+                <div id="amount">
+                    <p>Amount: </p>
+                    <span class="material-symbols-outlined">
+                        currency_rupee
+                    </span>
+                    <input type="text" placeholder="Amount in Rupees">
+                </div>
+                <div id="password">
+                    <p>PIN: </p>
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <input type="password" placeholder="PIN">
+                </div>
+                <button>Pay Now</button>
+                <div id="home">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <a href="/home2"><p>Home</p></a>
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400&family=Roboto+Slab:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+h1 {
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+#govt {
+    width: 200px;
+}
+#med {
+    width: 200px;
+}
+#needs {
+    width: 200px;
+}
+#stock {
+    width: 200px;
+}
+#loan {
+    width: 200px;
+}
+#homes{
+    width: 200px;
+}
+.govt-schemes {
+    background-color: rgb(177, 172, 172, 0.3);
+    margin: 1em auto;
+    width: 300px;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1em;
+    border-radius: 5px;
+}
+.medical {
+    background-color: rgb(177, 172, 172, 0.3);
+    margin: 1em auto;
+    width: 300px;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1em;
+    border-radius: 5px;
+}
+.daily-needs {
+    background-color: rgb(177, 172, 172, 0.3);
+    margin: 1em auto;
+    width: 300px;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1em;
+    border-radius: 5px;
+    height: 25em;
+}
+.stocks {
+    background-color: rgb(177, 172, 172, 0.3);
+    margin: 1em auto;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1em;
+    border-radius: 5px;
+    width: 300px;
+    height: 34em;
+}
+.loans {
+    background-color: rgb(177, 172, 172, 0.3);
+    margin: 1em auto;
+    width: 300px;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1em;
+    border-radius: 5px;
+    height: 25em;
+}
+.home {
+    background-color: rgb(177, 172, 172, 0.3);
+    margin: 1em auto;
+    width: 300px;
+    box-shadow: 1px 1px 2px gray;
+    padding: 1em;
+    border-radius: 5px;
+    height: 25em;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.first{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.second {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.third {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.container {
+    justify-content: center;
+}
+#logo-img {
+    width: 100px;
+    height: 100px;
+}
+button {
+    padding: 5px 15px;
+    border: 1px solid rgb(100, 92, 92);
+    background-color: whitesmoke;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+button:hover {
+    transition: ease 150ms;
+    color: white;
+    background-color: rgb(100, 92, 92);
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .welcome-text {
+        width: 90%;
+        font-size: 2em;
+    }
+}

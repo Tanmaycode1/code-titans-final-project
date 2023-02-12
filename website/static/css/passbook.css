@@ -1,0 +1,83 @@
+// Font family
+body
+  font-family "Roboto", sans-serif
+
+// Vars
+$blue = #44acff
+$green = #4ed99c
+$red = #f14044
+$black-2 = #2b2d32
+
+// Styles for table
+.table
+  width 100%
+  border-spacing 0
+  text-align left
+  th
+    font-weight 300
+    font-size 16px
+    color #ffffff
+    line-height 26px
+    padding 18px 30px
+  thead
+    tr
+      background $black-2
+  td
+    padding 30px 30px 31px
+    font-weight 300
+    font-size 16px
+    color black-2
+    line-height 26px
+    text-transform uppercase
+  tbody
+    tr
+      &:nth-child(odd)
+        background $white
+      &:nth-child(even)
+        background $f8fbfc
+  &__wrapper
+    padding-top 40px
+
+// Style for buttons
+  .btn
+    display inline-block
+    font-weight 700
+    font-size 15px
+    line-height 25px
+    text-transform uppercase
+    width 170px
+    text-align center
+    padding 10px
+    border-radius 3px
+    transition background .3s ease
+    text-decoration none
+    &:hover
+        color $white
+    &__active
+        color $green
+        border 2px solid $green
+        &:hover
+            background $green
+    &__pledged
+        color $red
+        border 2px solid $red
+        &:hover
+            background $red
+
+// Media styles for table
+
+@media (max-width : 768px)
+	.table
+		td
+			display block
+			text-align right
+			&:before
+				content attr(data-label)
+				float left
+				text-transform uppercase
+				font-weight bold
+		thead
+			display none
+    tr
+      margin-bottom 30px
+      display block

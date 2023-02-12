@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("http://4kwallpapers.com/images/walls/thumbs_2t/8995.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+#header-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header-logo {
+    width: 150px;
+    height: 150px;
+}
+form h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3em;
+}
+.main {
+    width: 800px;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin: 0.7em auto;
+    display: flex;
+}
+.main::before{
+    content:'';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    inset: 0;
+    transform: rotate(-2deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+input[type="text"],
+input[type="password"]{
+    border: none;
+    outline: none;
+    background: #fdf6f6da;
+    padding: 0.7rem 1rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 60%;
+}
+input:focus {
+    background-color: hwb(192 82% 6%);
+}
+span {
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+}
+#main-image {
+    margin-top: 3em;
+    width: 450px;
+    height: 400px;
+    margin-right: 2em;
+    margin-left: 1.5em;
+    box-shadow: inset 1px 1px 10px black;
+}
+#upi-id {
+    margin:3em auto 1em auto;
+    font-weight: bold;
+}
+#receiver {
+    margin:1em auto 1em auto;
+    font-weight: bold;
+}
+#amount {
+    margin:1em auto 1em auto;
+    font-weight: bold;
+}
+#password {
+    margin:1em auto 1em auto;
+    font-weight: bold;
+}
+button {
+    width: 80%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    margin: 1em auto;
+    text-align: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:hover {
+    box-shadow: inset 1px 1px 10px aqua,
+                1px 1px 10px aqua;
+    border: none;
+    cursor: pointer;
+}
+#home a{
+    display: inline-block;
+    text-decoration: none;
+}
+#home {
+    margin-top: 0.8em;
+    position: absolute;
+}
+@media screen and (max-width: 1000px) {
+    body {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 65em;
+        text-align: center;
+    }
+    #header-text h1 {
+        font-size: 2em;
+    }
+    #header-logo {
+        width: 80px;
+        height: 100px;
+    }
+    #main-image {
+        width: 80%;
+        height: 40%;
+        align-items: center;
+        margin: 2em auto;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 50%;
+    }
+    button {
+        width: 60%;
+        margin-bottom: 5em;
+    }
+    #home {
+        margin-left: 4em;
+    }
+}

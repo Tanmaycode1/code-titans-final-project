@@ -1,0 +1,24 @@
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/passbook.css') }}">
+<body>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Contact ID</th>
+            <th>Power</th>
+            <th>Expiration</th>
+            <th>Value</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for i in data %}
+        <tr>
+            <td data-label="Contact ID">i[0]</td>
+            <td data-label="Power">i[1]</td>
+            <td data-label="Expiration">i[2]</td>
+            <td data-label="Value">i[3]</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
